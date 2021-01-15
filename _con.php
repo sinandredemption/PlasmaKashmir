@@ -40,7 +40,7 @@ function send_text($number, $text) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://www.fast2sms.com/dev/bulk?authorization=U5HtjgypMn9YQOlu7Ai8eqL0ZNSKGRFPrwxEBzvJa34IVkXhf6eNx1REobLmZnfsT8OyAlShtqXBgU0M&sender_id=FSTSMS&message=" .
+    CURLOPT_URL => "https://www.fast2sms.com/dev/bulk?authorization=<insert key>&sender_id=FSTSMS&message=" .
     urlencode($text)."&language=english&route=p&numbers=".
     urlencode($number),
     CURLOPT_RETURNTRANSFER => true,
